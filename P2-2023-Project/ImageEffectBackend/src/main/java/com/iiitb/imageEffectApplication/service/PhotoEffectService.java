@@ -204,28 +204,6 @@ public class PhotoEffectService {
         }
     }
 
-    // public ResponseEntity<byte[]> applyGaussianBlurEffect(float radius, MultipartFile imageFile) {
-    //     try {
-    //         Pixel[][] inputImage = processingUtils.preprocessing(imageFile);
-    //         String imageName = imageFile.getOriginalFilename();
-
-
-    //         // ACTUAL WORK STARTS HERE
-
-    //         // TODO
-    //         Pixel[][] modifiedImage = inputImage; // Replace this with actual modified image
-
-    //         // ACTUAL WORK ENDS HERE
-
-
-
-    //         return processingUtils.postProcessing(modifiedImage);
-
-    //     } catch (IOException e) {
-    //         e.printStackTrace();
-    //         return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
-    //     }
-    // }
 
     public ResponseEntity<byte[]> applyGrayscaleEffect(MultipartFile imageFile) {
         try {
@@ -271,29 +249,6 @@ public class PhotoEffectService {
         }
     }
 
-    // public ResponseEntity<byte[]> applyInvertEffect(int value, MultipartFile imageFile) {
-    //     try {
-            
-    //         Pixel[][] inputImage = processingUtils.preprocessing(imageFile);
-    //         String imageName = imageFile.getOriginalFilename();
-
-
-    //         // ACTUAL WORK STARTS HERE
-
-    //         // TODO
-    //         InvertEffect object1 = new InvertEffect();
-    //         Pixel[][] modifiedImage = object1.apply(inputImage, imageName, loggingService);
-
-    //         // ACTUAL WORK ENDS HERE
-
-
-    //         return processingUtils.postProcessing(modifiedImage);
-
-    //     } catch (IOException e) {
-    //         e.printStackTrace();
-    //         return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
-    //     }
-    // }
 
     public ResponseEntity<byte[]> applyRotationEffect(int value, MultipartFile imageFile) {
         try {
